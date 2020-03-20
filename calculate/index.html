@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>payement en ligne</h1>
+			<div id="calculator">
+				<form>
+					<p>Quel prix de désirez avec le % réduit ?</p>
+					<p>
+						<input
+							id="billamt"
+							type="text"
+							placeholder="montant de la facture"
+						/>
+						F CFA
+					</p>
+
+					<p>quelle culture de tenue vous convient ?</p>
+					<p>
+						<select id="serviceQual">
+							<option disabled selected value="0">Vos Tenues Solde</option>
+							<option value="0.3">30&#37; &#45; Tenue Baoule</option>
+							<option value="0.2">20&#37; &#45; Tenue Dida</option>
+							<option value="0.15">15&#37; &#45; Tenue Yacouba</option>
+							<option value="0.1">10&#37; &#45; Tenue Abron</option>
+							<option value="0.05">5&#37; &#45; Tenue Abidji</option>
+						</select>
+					</p>
+				</form>
+
+				<p>combien de Tenue désirez-vous?</p>
+				<input id="peopleamt" type="text" placeholder="Nombre de Tenue" />
+				Tenue
+				<button type="button" id="calculate">Voir la Somme à payer!</button>
+			</div>
+			<!--calculator end-->
+			<div id="totalTip">
+				<span id="tip">0.00</span><sup>F cfa</sup>
+				<small id="each"></small>
+			</div>
+			<!--totalTip end-->
+		</div>
+		<!--container end-->
+
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
